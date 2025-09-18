@@ -1,0 +1,14 @@
+C:\Dev\C#\ConsoleGameEngine\bin\Debug\net8.0\ConsoleGameEngine.exe
+C:\Dev\C#\ConsoleGameEngine\bin\Debug\net8.0\ConsoleGameEngine.deps.json
+C:\Dev\C#\ConsoleGameEngine\bin\Debug\net8.0\ConsoleGameEngine.runtimeconfig.json
+C:\Dev\C#\ConsoleGameEngine\bin\Debug\net8.0\ConsoleGameEngine.dll
+C:\Dev\C#\ConsoleGameEngine\bin\Debug\net8.0\ConsoleGameEngine.pdb
+C:\Dev\C#\ConsoleGameEngine\obj\Debug\net8.0\ConsoleGameEngine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\C#\ConsoleGameEngine\obj\Debug\net8.0\ConsoleGameEngine.AssemblyInfoInputs.cache
+C:\Dev\C#\ConsoleGameEngine\obj\Debug\net8.0\ConsoleGameEngine.AssemblyInfo.cs
+C:\Dev\C#\ConsoleGameEngine\obj\Debug\net8.0\ConsoleGameEngine.csproj.CoreCompileInputs.cache
+C:\Dev\C#\ConsoleGameEngine\obj\Debug\net8.0\ConsoleGameEngine.dll
+C:\Dev\C#\ConsoleGameEngine\obj\Debug\net8.0\refint\ConsoleGameEngine.dll
+C:\Dev\C#\ConsoleGameEngine\obj\Debug\net8.0\ConsoleGameEngine.pdb
+C:\Dev\C#\ConsoleGameEngine\obj\Debug\net8.0\ConsoleGameEngine.genruntimeconfig.cache
+C:\Dev\C#\ConsoleGameEngine\obj\Debug\net8.0\ref\ConsoleGameEngine.dll
