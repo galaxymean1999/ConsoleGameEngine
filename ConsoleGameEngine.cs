@@ -26,6 +26,8 @@ class ConsoleGameEngine {
 	public int screenHeight;
 	public int FPS;
 
+	public bool running = false;
+
 	public const char FULL = '\u2588';
 	public const char DARK = '\u2593';
 	public const char MEDIUM = '\u2592';
@@ -33,20 +35,26 @@ class ConsoleGameEngine {
 	public const char HALF = ':';
 	public const char BLANK = ' ';
 
+	public Thread updateThread;
+
 	// PRIVATE
 	private char[] screenBuffer;
-	private bool running = false;
 
 	public void run() {
 		running = true;
 
+		updateThread = new Thread(Update);
+
 		Load();
+
+		updateThread.IsBackground = true;
+		updateThread.Start();
 
 		while (running) {
 			Stopwatch sw = new Stopwatch();
 			sw.Start();
 
-			Update();
+			//Update();
 			Draw();
 
 			sw.Stop();
@@ -63,10 +71,6 @@ class ConsoleGameEngine {
 	}
 
 	public void ClearScreenBuffer() {
-		Console.SetCursorPosition(0, 0);
-		
-		Console.Clear();
-
 		for (int y = 0; y < screenHeight; y++) {
 			for (int x = 0; x < screenWidth; x++) {
 				screenBuffer[y * screenWidth + x] = BLANK;
@@ -100,14 +104,14 @@ class ConsoleGameEngine {
 	}
 
 	public void SetPixel(int x, int y, char type) {
-		if (x < screenWidth-1 && x >= 0 && y < screenHeight && y >= 0) {
+		if (x < screenWidth - 1 && x >= 0 && y < screenHeight && y >= 0) {
 			screenBuffer[y * screenWidth + x] = type;
-		}		
+		}
 	}
 
-	public virtual void Load() {}
+	public virtual void Load() { }
 
-	public virtual void Draw() {}
+	public virtual void Draw() { }
 
-	public virtual void Update() {}
+	public virtual void Update() { }
 }
