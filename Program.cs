@@ -90,27 +90,25 @@ class Program : ConsoleGameEngine {
 	}
 
 	public override void Update() {
-		while (running) {
-			if (Console.KeyAvailable) {
-				switch (Console.ReadKey(true).Key) {
-					case ConsoleKey.Escape:
-						End();
-						break;
-					case ConsoleKey.W:
-						x += Math.Cos(angle);
-						y += Math.Sin(angle);
-						break;
-					case ConsoleKey.S:
-						x -= Math.Cos(angle);
-						y -= Math.Sin(angle);
-						break;
-					case ConsoleKey.D:
-						angle += 0.1 * Math.PI;
-						break;
-					case ConsoleKey.A:
-						angle -= 0.1 * Math.PI;
-						break;
-				}
+		if (Console.KeyAvailable) {
+			switch (Console.ReadKey(true).Key) {
+				case ConsoleKey.Escape:
+					End();
+					break;
+				case ConsoleKey.W:
+					x += Math.Cos(angle);
+					y += Math.Sin(angle);
+					break;
+				case ConsoleKey.S:
+					x -= Math.Cos(angle);
+					y -= Math.Sin(angle);
+					break;
+				case ConsoleKey.D:
+					angle += 0.1 * Math.PI;
+					break;
+				case ConsoleKey.A:
+					angle -= 0.1 * Math.PI;
+					break;
 			}
 		}
 	}

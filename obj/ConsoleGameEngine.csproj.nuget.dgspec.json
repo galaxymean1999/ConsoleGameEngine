@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\C#\\ConsoleGameEngine\\ConsoleGameEngine.csproj": {}
+    "C:\\Users\\Coder\\source\\repos\\galaxymean1999\\ConsoleGameEngine\\ConsoleGameEngine.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\C#\\ConsoleGameEngine\\ConsoleGameEngine.csproj": {
+    "C:\\Users\\Coder\\source\\repos\\galaxymean1999\\ConsoleGameEngine\\ConsoleGameEngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\C#\\ConsoleGameEngine\\ConsoleGameEngine.csproj",
+        "projectUniqueName": "C:\\Users\\Coder\\source\\repos\\galaxymean1999\\ConsoleGameEngine\\ConsoleGameEngine.csproj",
         "projectName": "ConsoleGameEngine",
-        "projectPath": "C:\\Dev\\C#\\ConsoleGameEngine\\ConsoleGameEngine.csproj",
+        "projectPath": "C:\\Users\\Coder\\source\\repos\\galaxymean1999\\ConsoleGameEngine\\ConsoleGameEngine.csproj",
         "packagesPath": "C:\\Users\\Coder\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\C#\\ConsoleGameEngine\\obj\\",
+        "outputPath": "C:\\Users\\Coder\\source\\repos\\galaxymean1999\\ConsoleGameEngine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -30,6 +30,7 @@
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {}
           }
@@ -44,10 +45,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "10.0.400"
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "imports": [
             "net461",
@@ -65,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

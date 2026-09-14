@@ -43,7 +43,7 @@ class ConsoleGameEngine {
 	public void run() {
 		running = true;
 
-		updateThread = new Thread(Update);
+		updateThread = new Thread(update);
 
 		Load();
 
@@ -62,6 +62,14 @@ class ConsoleGameEngine {
 			int waitTime = 1000 / FPS - (int)sw.ElapsedMilliseconds;
 			if (waitTime > 0) {
 				Thread.Sleep(waitTime);
+			}
+		}
+	}
+
+	private void update() {
+		while (true) {
+			if (running) {
+				Update();
 			}
 		}
 	}
